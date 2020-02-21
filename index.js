@@ -18,3 +18,4 @@ server.use("/api/posts", postsRouter);
 server.get("/", (req, res) => {
   res.json({ message: "Hello world!" });
 });
+//notes
