@@ -10,8 +10,9 @@ server.listen(port, () => {
 });
 server.use(express.json());
 
-//Sub Routes
+//Sub Route
 server.use("/api/posts", postsRouter);
+
 //Sanitiy Checked (Confirmed)
 server.get("/", (req, res) => {
   res.json({ message: "Hello world!" });
